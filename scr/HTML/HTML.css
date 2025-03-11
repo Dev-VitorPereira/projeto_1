@@ -45,7 +45,15 @@ body {
     border: 10px;
 
 }
-
+textarea {
+    width: 200px;  /* Largura fixa */
+    height: 200px; /* Altura fixa */
+    resize: none;  /* Impede redimensionamento */
+    font-family: monospace; /* Fonte de código */
+    background-color: #f4f4f4; /* Cor de fundo */
+    border: 1px solid #ccc; /* Borda */
+    padding: 10px; /* Espaçamento interno */
+  }
 .footer {
     background-color: #2C3E50;
     padding: 20px;
