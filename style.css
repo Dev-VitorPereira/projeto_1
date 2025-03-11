@@ -1,58 +1,103 @@
 @charset "UTF-8";
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #D3D3D3; 
+    background-color: #D3D3D3;
     color: #4F4F4F;
     text-align: center;
 }
+
+
 .header {
-    background-color: #2C3E50; 
+    background-color: #2C3E50;
     padding: 20px;
     text-align: center;
 }
 .header h1 {
     font-size: 3em;
-    color: #FFFFFF; 
+    color: #FFFFFF;
 }
 .header h2 {
     font-size: 1.2em;
     font-weight: lighter;
-    color: #FFFFFF; 
+    color: #FFFFFF;
 }
+.header h3 {
+    font-size: 0.89em;
+    font-weight: lighter;
+    color: #2a8aff;
+}
+
 .main {
-    margin: 40px 0;
+    display: flex;
+    gap: 20px; /* Espaçamento entre os itens */
+    justify-content: center; /* Centraliza os botões na horizontal */
+    align-items: center;
+    margin-top: 50px;
+    flex-wrap: wrap; /* Permite que os itens quebrem linha se necessário */
+    height: 300px;
 }
-.main input {
-    background-color: #8AADD6; 
-    color: white;
+
+.item {
+    display: flex;
+    align-items: center; /* Alinha a imagem e o botão na mesma linha */
+    gap: 2px; /* Espaço entre a imagem e o botão */
+}
+
+input[class^="button"] {
+    color: rgba(0, 0, 0, 0.648);
     font-size: 1.2em;
     border: none;
-    padding: 15px;
-    margin: 10px;
+    padding: 10px 15px;
+    margin: 1px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-.main input:hover {
-    background-color: #B0B0B0; 
+
+
+input.buttonHTML {
+    background-color: #ff81327e; 
 }
+input.buttonCSS {
+    background-color: #4683b483; 
+}
+input.buttonJavaScript {
+    background-color: #ffeb3b98; 
+}
+input.buttonJava {
+    background-color: #4caf4f8f; 
+    
+}
+input.buttonPython {
+    background-color: #3573a580; 
+}
+
+
+input.buttonHTML:hover { background-color: #D96C26; }
+input.buttonCSS:hover { background-color: #3C6E8C; }
+input.buttonJavaScript:hover { background-color: #FBC02D; }
+input.buttonJava:hover { background-color: #388E3C; }
+input.buttonPython:hover { background-color: #286C8B; }
+
+
 .footer {
-    background-color: #2C3E50; 
+    background-color: #2C3E50;
     padding: 20px;
-    position: fixed;
     width: 100%;
     bottom: 0;
     font-size: 0.5em;
     color: white;
+    text-align: center;
 }
 .footer a {
-    color: #FFFFFF; 
+    color: #FFFFFF;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.5em;
 }
 .footer a:hover {
-    color: #8AADD6; 
+    color: #8AADD6;
 }
