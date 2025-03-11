@@ -1,0 +1,66 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #D3D3D3;
+    color: #4F4F4F;
+    text-align: center;
+}
+.header {
+    background-color: #2C3E50;
+    padding: 10px;
+    text-align: center;
+}
+.header h1 {
+    font-size: 3em;
+    color: #FFFFFF;
+}
+.header h2 {
+    font-size: 1.2em;
+    font-weight: lighter;
+    color: #FFFFFF;
+}
+.header h3 {
+    font-size: 0.89em;
+    font-weight: lighter;
+    color: #2a8aff;
+}
+.main {
+    display: flex;
+    gap: 20px; /* Espaçamento entre os itens */
+    justify-content: center; /* Centraliza os botões na horizontal */
+    align-items: center;
+    margin-top: 50px;
+    flex-wrap: wrap; /* Permite que os itens quebrem linha se necessário */
+    height: 300px;
+}
+.conteudo{
+    text-align: justify;
+    display: flex;
+    height: 250px;
+    width: 250px;
+    flex-direction: column;
+    background-color: #8AADD6;
+    border: 10px;
+
+}
+
+.footer {
+    background-color: #2C3E50;
+    padding: 20px;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.5em;
+    color: white;
+    text-align: center;
+}
+.footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.footer a:hover {
+    color: #8AADD6;
+}
