@@ -6,54 +6,47 @@ body {
     background-color: #D3D3D3;
     color: #4F4F4F;
     text-align: center;
+
 }
 .header {
-    background-color: #2C3E50;
+    background-color: #45e4ed84;
     padding: 10px;
     text-align: center;
 }
 .header h1 {
     font-size: 3em;
-    color: #FFFFFF;
+    color: #000000d6;
 }
 .header h2 {
     font-size: 1.2em;
     font-weight: lighter;
-    color: #FFFFFF;
+    color: #000000;
 }
 .header h3 {
     font-size: 0.89em;
     font-weight: lighter;
     color: #2a8aff;
 }
-.main {
+.container {
     display: flex;
-    gap: 20px; /* Espaçamento entre os itens */
-    justify-content: center; /* Centraliza os botões na horizontal */
-    align-items: center;
-    margin-top: 50px;
-    flex-wrap: wrap; /* Permite que os itens quebrem linha se necessário */
-    height: 300px;
+    flex-wrap: wrap; /* Permite que os itens quebrem para novas linhas em telas menores */
+    gap: 10px;
+    max-width: 100%; /* Faz o container se ajustar à tela */
+    padding: 10px;
+    justify-content: center; /* Centraliza os elementos */
+    background-color: #4F4F4F;
 }
-.conteudo{
-    text-align: justify;
-    display: flex;
-    height: 250px;
-    width: 250px;
-    flex-direction: column;
-    background-color: #8AADD6;
-    border: 10px;
 
+
+.iframe1 {
+    width: 100%;
+    max-width: 600px; /* Evita que ultrapasse o tamanho ideal */
+    height: auto;
+    aspect-ratio: 16 / 9; /* Mantém a proporção do vídeo */
+    border: none;
 }
-textarea {
-    width: 200px;  /* Largura fixa */
-    height: 200px; /* Altura fixa */
-    resize: none;  /* Impede redimensionamento */
-    font-family: monospace; /* Fonte de código */
-    background-color: #f4f4f4; /* Cor de fundo */
-    border: 1px solid #ccc; /* Borda */
-    padding: 10px; /* Espaçamento interno */
-  }
+
+
 .footer {
     background-color: #2C3E50;
     padding: 20px;
