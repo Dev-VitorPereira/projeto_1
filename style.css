@@ -116,12 +116,24 @@ input.buttonPython:hover { background-color: #286C8B; }
     color: white;
     text-align: center;
 }
-.footer a {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.5em;
-}
-.footer a:hover {
-    color: #8AADD6;
-}
+footer {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-icon img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icon img:hover {
+    transform: scale(1.2);
+  }
