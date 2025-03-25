@@ -1,12 +1,34 @@
+
 var nextBtn = document.querySelector('.next'),
     prevBtn = document.querySelector('.prev'),
     carousel = document.querySelector('.carousel'),
     list = document.querySelector('.list'), 
     item = document.querySelectorAll('.item'),
     runningTime = document.querySelector('.carousel .timeRunning') 
+    
 
-let timeRunning = 3000 
-let timeAutoNext = 7000
+    document.getElementById("buttonHTML").addEventListener("click", function() {
+        window.open("./scr/HTML/html.html", "_blank"); // Abre em nova aba
+    });
+    document.getElementById("buttonCSS").addEventListener("click", function() {
+        window.open("./scr/CSS/css.html", "_blank"); // Abre em nova aba
+    });
+    
+    document.getElementById("buttonJavaScript").addEventListener("click", function() {
+        window.open("./scr/JAVASCRIPT/javascript.html", "_blank"); // Abre em nova aba
+    });
+    
+    document.getElementById("buttonJava").addEventListener("click", function() {
+        window.open("./scr/JAVA/java.html", "_blank"); // Abre em nova aba
+    });
+    
+    document.getElementById("buttonPython").addEventListener("click", function() {
+        window.open("./scr/PYTHON/python.html", "_blank"); // Abre em nova aba
+    });
+
+
+let timeRunning = 5000 
+let timeAutoNext = 10000
 
 nextBtn.onclick = function(){
     showSlider('next')

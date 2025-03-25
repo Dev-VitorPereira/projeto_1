@@ -21,7 +21,7 @@ header{
 }
 
 header nav a{
-    color: #fff;
+    color: #000000;
     margin-right: 5px;
     padding: 5px 10px;
     font-size: 16px;
@@ -99,10 +99,6 @@ a:hover{
     opacity: 0;
 }
 
-
-
-
-
 .list .item .content{
     position: absolute;
     top: 50%;
@@ -110,7 +106,7 @@ a:hover{
     transform: translateY(-50%);
     width: 400px;
     text-align: left;
-    color: #fff;
+    color: #000000;
     display: none;
 }
 
@@ -157,13 +153,82 @@ a:hover{
     animation: animate 1s ease-in-out 1.2s 1 forwards;
 }
 
-.content .btn button{
-    padding: 10px 20px;
+.buttonHTML{
+    color: rgba(0, 0, 0, 0.648);
+    font-size: 1.2em;
     border: none;
+    padding: 10px 15px;
+    margin: 1px;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
-    border: 2px solid #fff;
+    transition: background-color 0.3s ease;
 }
+input.buttonCSS{
+    color: rgba(0, 0, 0, 0.648);
+    font-size: 1.2em;
+    border: none;
+    padding: 10px 15px;
+    margin: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input.buttonJavaScript{
+    color: rgba(0, 0, 0, 0.648);
+    font-size: 1.2em;
+    border: none;
+    padding: 10px 15px;
+    margin: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+input.buttonJava{
+    color: rgba(0, 0, 0, 0.648);
+    font-size: 1.2em;
+    border: none;
+    padding: 10px 15px;
+    margin: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+input.buttonPython{
+    color: rgba(0, 0, 0, 0.648);
+    font-size: 1.2em;
+    border: none;
+    padding: 10px 15px;
+    margin: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input.buttonHTML {
+    background-color: #ffffff7e; 
+}
+input.buttonCSS {
+    background-color: #ffffff7e;
+}
+input.buttonJavaScript {
+    background-color: #ffffff7e;
+}
+input.buttonJava {
+    background-color: #ffffff7e;
+    
+}
+input.buttonPython {
+    background-color: #ffffff7e; 
+}
+
+
+input.buttonHTML:hover { background-color: #ffffff; }
+input.buttonCSS:hover { background-color: #ffffff; }
+input.buttonJavaScript:hover { background-color: #00000044; }
+input.buttonJava:hover { background-color: #388E3C; }
+input.buttonPython:hover { background-color: #286C8B; }
 
 .content .btn button:nth-child(1){
     margin-right: 15px;
@@ -198,14 +263,6 @@ a:hover{
     }
 }
 
-/* Carousel */
-
-
-
-
-
-
-/* next prev arrows */
 
 .arrows{
     position: absolute;
@@ -299,5 +356,5 @@ a:hover{
     .content .btn button{
         padding: 10px 15px;
         font-size: 14px;
-    }
+    }    
 }
