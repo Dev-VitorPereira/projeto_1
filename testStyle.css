@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,8 +9,8 @@
 
 /* Header section */
 
-header{
-    width: 100%; 
+header {
+    width: 100%;
     max-width: 100%;
     padding-left: 100px;
     height: 50px;
@@ -20,7 +20,7 @@ header{
     z-index: 1000;
 }
 
-header nav a{
+header nav a {
     color: #000000;
     margin-right: 5px;
     padding: 5px 10px;
@@ -29,12 +29,12 @@ header nav a{
     text-decoration: none;
 }
 
-a.active{
+a.active {
     background: #14ff72cb;
     border-radius: 2px;
 }
 
-a:hover{
+a:hover {
     background: #14ff72cb;
     border-radius: 2px;
 }
@@ -45,7 +45,7 @@ a:hover{
 
 /* carousel */
 
-.carousel{
+.carousel {
     width: 100vw;
     height: 100vh;
     margin-top: -50px;
@@ -53,7 +53,7 @@ a:hover{
     position: relative;
 }
 
-.carousel .list .item{
+.carousel .list .item {
     width: 180px;
     height: 250px;
     position: absolute;
@@ -69,7 +69,7 @@ a:hover{
 }
 
 .carousel .list .item:nth-child(1),
-.carousel .list .item:nth-child(2){
+.carousel .list .item:nth-child(2) {
     top: 0;
     left: 0;
     transform: translate(0, 0);
@@ -78,28 +78,28 @@ a:hover{
     height: 100%;
 }
 
-.carousel .list .item:nth-child(3){
+.carousel .list .item:nth-child(3) {
     left: 67%;
 }
 
-.carousel .list .item:nth-child(4){
+.carousel .list .item:nth-child(4) {
     left: calc(67% + 200px);
 }
 
-.carousel .list .item:nth-child(5){
+.carousel .list .item:nth-child(5) {
     left: calc(67% + 400px);
 }
 
-.carousel .list .item:nth-child(6){
+.carousel .list .item:nth-child(6) {
     left: calc(67% + 600px);
 }
 
-.carousel .list .item:nth-child(n+7){
+.carousel .list .item:nth-child(n+7) {
     left: calc(67% + 800px);
     opacity: 0;
 }
 
-.list .item .content{
+.list .item .content {
     position: absolute;
     top: 50%;
     left: 100px;
@@ -110,11 +110,11 @@ a:hover{
     display: none;
 }
 
-.list .item:nth-child(2) .content{
+.list .item:nth-child(2) .content {
     display: block;
 }
 
-.content .title{
+.content .title {
     font-size: 100px;
     text-transform: uppercase;
     color: #000000;
@@ -125,7 +125,7 @@ a:hover{
     animation: animate 1s ease-in-out 0.3s 1 forwards;
 }
 
-.content .name{
+.content .name {
     font-size: 100px;
     text-transform: uppercase;
     font-weight: bold;
@@ -136,7 +136,7 @@ a:hover{
     animation: animate 1s ease-in-out 0.6s 1 forwards;
 }
 
-.content .des{
+.content .des {
     margin-top: 10px;
     margin-bottom: 20px;
     font-size: 18px;
@@ -146,24 +146,14 @@ a:hover{
     animation: animate 1s ease-in-out 0.9s 1 forwards;
 }
 
-.content .btn{
+.content .btn {
     margin-left: 5px;
 
     opacity: 0;
     animation: animate 1s ease-in-out 1.2s 1 forwards;
 }
 
-.buttonHTML{
-    color: rgba(0, 0, 0, 0.648);
-    font-size: 1.2em;
-    border: none;
-    padding: 10px 15px;
-    margin: 1px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-input.buttonCSS{
+.buttonHTML {
     color: rgba(0, 0, 0, 0.648);
     font-size: 1.2em;
     border: none;
@@ -174,7 +164,18 @@ input.buttonCSS{
     transition: background-color 0.3s ease;
 }
 
-input.buttonJavaScript{
+input.buttonCSS {
+    color: rgba(0, 0, 0, 0.648);
+    font-size: 1.2em;
+    border: none;
+    padding: 10px 15px;
+    margin: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input.buttonJavaScript {
     color: rgba(0, 0, 0, 0.648);
     font-size: 1.2em;
     border: none;
@@ -185,7 +186,8 @@ input.buttonJavaScript{
     transition: background-color 0.3s ease;
 
 }
-input.buttonJava{
+
+input.buttonJava {
     color: rgba(0, 0, 0, 0.648);
     font-size: 1.2em;
     border: none;
@@ -195,7 +197,8 @@ input.buttonJava{
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-input.buttonPython{
+
+input.buttonPython {
     color: rgba(0, 0, 0, 0.648);
     font-size: 1.2em;
     border: none;
@@ -207,41 +210,59 @@ input.buttonPython{
 }
 
 input.buttonHTML {
-    background-color: #ffffff7e; 
+    background-color: #ffffff7e;
 }
+
 input.buttonCSS {
     background-color: #ffffff7e;
 }
+
 input.buttonJavaScript {
     background-color: #ffffff7e;
 }
+
 input.buttonJava {
     background-color: #ffffff7e;
-    
+
 }
+
 input.buttonPython {
-    background-color: #ffffff7e; 
+    background-color: #ffffff7e;
 }
 
 
-input.buttonHTML:hover { background-color: #ffffff; }
-input.buttonCSS:hover { background-color: #ffffff; }
-input.buttonJavaScript:hover { background-color: #00000044; }
-input.buttonJava:hover { background-color: #388E3C; }
-input.buttonPython:hover { background-color: #286C8B; }
+input.buttonHTML:hover {
+    background-color: #ffffff;
+}
 
-.content .btn button:nth-child(1){
+input.buttonCSS:hover {
+    background-color: #ffffff;
+}
+
+input.buttonJavaScript:hover {
+    background-color: #00000044;
+}
+
+input.buttonJava:hover {
+    background-color: #388E3C;
+}
+
+input.buttonPython:hover {
+    background-color: #286C8B;
+}
+
+.content .btn button:nth-child(1) {
     margin-right: 15px;
 }
 
-.content .btn button:nth-child(2){
+.content .btn button:nth-child(2) {
     background: transparent;
     color: #14ff72cb;
     border: 2px solid #fff;
     transition: 0.3s;
 }
 
-.content .btn button:nth-child(2):hover{
+.content .btn button:nth-child(2):hover {
     background-color: #14ff72cb;
     color: #fff;
     border-color: #14ff72cb;
@@ -249,14 +270,14 @@ input.buttonPython:hover { background-color: #286C8B; }
 
 
 @keyframes animate {
-    
-    from{
+
+    from {
         opacity: 0;
         transform: translate(0, 100px);
         filter: blur(33px);
     }
 
-    to{
+    to {
         opacity: 1;
         transform: translate(0);
         filter: blur(0);
@@ -264,7 +285,7 @@ input.buttonPython:hover { background-color: #286C8B; }
 }
 
 
-.arrows{
+.arrows {
     position: absolute;
     top: 80%;
     right: 52%;
@@ -276,7 +297,7 @@ input.buttonPython:hover { background-color: #286C8B; }
     align-items: center;
 }
 
-.arrows button{
+.arrows button {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -291,14 +312,14 @@ input.buttonPython:hover { background-color: #286C8B; }
     cursor: pointer;
 }
 
-.arrows button:hover{
+.arrows button:hover {
     background: #fff;
     color: #000;
 }
 
 
 /* time running */
-.carousel .timeRunning{
+.carousel .timeRunning {
     position: absolute;
     z-index: 1000;
     width: 0%;
@@ -310,51 +331,58 @@ input.buttonPython:hover { background-color: #286C8B; }
 }
 
 @keyframes runningTime {
-    
-    from{width: 0%;}
-    to{width: 100%;}
+
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
 
 }
 
 
 /* Responsive Design */
 
-@media screen and (max-width: 999px){
-    
-    header{
+@media screen and (max-width: 999px) {
+
+    header {
         padding-left: 50px;
     }
 
-    .list .item .content{
+    .list .item .content {
         left: 50px;
     }
 
-    .content .title, .content .name{
+    .content .title,
+    .content .name {
         font-size: 70px;
     }
 
-    .content .des{
+    .content .des {
         font-size: 16px;
     }
 
 }
 
-@media screen and (max-width: 690px){
-    header nav a{
+@media screen and (max-width: 690px) {
+    header nav a {
         font-size: 14px;
         margin-right: 0;
     }
 
-    .list .item .content{
+    .list .item .content {
         top: 40%;
     }
 
-    .content .title, .content .name{
+    .content .title,
+    .content .name {
         font-size: 45px;
     }
 
-    .content .btn button{
+    .content .btn button {
         padding: 10px 15px;
         font-size: 14px;
-    }    
+    }
 }
