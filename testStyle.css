@@ -209,6 +209,17 @@ input.buttonPython {
     transition: background-color 0.3s ease;
 }
 
+input.buttonMySQL {
+    color: rgba(0, 0, 0, 0.648);
+    font-size: 1.2em;
+    border: none;
+    padding: 10px 15px;
+    margin: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
 input.buttonHTML {
     background-color: #ffffff7e;
 }
@@ -230,6 +241,11 @@ input.buttonPython {
     background-color: #ffffff7e;
 }
 
+input.buttonMySQL {
+    background-color: #ffffff7e;
+}
+
+
 
 input.buttonHTML:hover {
     background-color: #ffffff;
@@ -250,6 +266,11 @@ input.buttonJava:hover {
 input.buttonPython:hover {
     background-color: #286C8B;
 }
+
+input.buttonMySQL:hover {
+    background-color: #399cca;
+}
+
 
 .content .btn button:nth-child(1) {
     margin-right: 15px;

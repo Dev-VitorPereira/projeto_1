@@ -26,6 +26,10 @@ var nextBtn = document.querySelector('.next'),
         window.open("./scr/PYTHON/python.html", "_blank"); // Abre em nova aba
     });
 
+    document.getElementById("buttonMySQL").addEventListener("click", function() {
+        window.open("./scr/MYSQL/MySQL.html", "_blank"); // Abre em nova aba
+    });
+
 
 let timeRunning = 5000 
 let timeAutoNext = 10000
